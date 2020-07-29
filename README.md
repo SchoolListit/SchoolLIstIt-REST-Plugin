@@ -17,20 +17,20 @@ An assignment is the only 'object' which is created by and lives within this plu
 ### Schools
 A school in the SchoolListIt application can be created on the fly. There are no constraints placed by the app on who or how a school can be created. 
 
-### Classes, Teachers, Subjects, Grades -
+### Classes, Teachers, Subjects, Grades
 Classes are the congruence of a teacher, subject, and grade. Teachers and subjects are not hierarchal to any one school. They are also not hierarchal to each other. In other words, any ‘assignment’ or lesson on SchoolListIt can be added to any school, class, teacher, or subject.
 
 Think of schools, teachers, subjects, and grades as #Hashtags because under the hood, in the code, that is exactly what they are. More specifically schools, classes, teachers, subjects, and grades are custom WordPress tags attached to assignments. Assignments are posts. These special tags can be used in any combination to define a new class.
 
 These can also be created on the fly.
 
-**Removing classes** -
+**Removing classes**
 In practice, this means that any school or class will no longer show in the class feed when all of its due dates have expired and/or all the posts tagged with that school/class have been deleted. We hope this is an accurate picture of life. The platform archives unused and/or stale tags.
 
-### Assignment Date / Due Date -
+### Assignment Date / Due Date
 Assignment date is not like a hashtag. It is intrinsically linked to the assignment. It can be changed, but this is not the proper vehicle by which to “carry forward” an assignment to the next learning cycle. You should change the assignment date only to correct a mistake. Assignment Date and Due Date are WordPress post meta.
 
-### Keywords - 
+### Keywords 
 Keywords are also tags, and used in the traditional WordPress way. They are considered in search on SchoolListit, and we hope also on other search engines.
 
 ## Security
