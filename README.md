@@ -9,12 +9,12 @@ SchoolListIt REST API is a WordPress plugin that essentially functions as one of
 ## Information Architecture within the plugin and app
 The architecture is designed to facilitate flexibility and ease of use. Rather than taking the traditional approach for most education system, it is the goal of SchoolListIt to eliminiate the 'overhead' of posting information. Following the model of Facebook Groups and Google Places anyone can create a school, teacher, class, or assignment. Later, the school or teacher can 'verify' and gain read/write access to any content tagged as belonging to that school and/or class. 
 
-The idea is to circumvent the headache of gaining access into existing student information systems and provide parents and teachers a tool that is quick and easy to use. 
+The idea is to circumvent the headache of using the existing systems for teachers and parents, but also for SchoolListit gaining API access. Via this plugin and the SchoolListIt app, we provide parents and teachers a tool that is quick and easy to use and not limited by the security and heiarchy of current school information systems. 
 
 ### Assignments
-The assignment is the only 'object' which is created by and lives within this plugin. For a school to be an 'object' in WordPress, it should have its own WP installation (ie WordPress website with this plugin installed). Therein, the school is associated with an assignment by any user within the app tagging an assignment to a school. 
+An assignment is the only 'object' which is created by and lives within this plugin. For a school to be an 'object' in WordPress, it should have its own WP installation (ie WordPress website with this plugin installed). Therein, the school is associated with an assignment by any user within the app tagging an assignment to a school. 
 
-### School Definition -
+### Schools
 A school in the SchoolListIt application can be created on the fly. There are no constraints placed by the app on who or how a school can be created. 
 
 ### Classes, Teachers, Subjects, Grades -
@@ -27,14 +27,14 @@ These can also be created on the fly.
 **Removing classes** -
 In practice, this means that any school or class will no longer show in the class feed when all of its due dates have expired and/or all the posts tagged with that school/class have been deleted. We hope this is an accurate picture of life. The platform archives unused and/or stale tags.
 
-**Assignment Date / Due Date** -
+### Assignment Date / Due Date -
 Assignment date is not like a hashtag. It is intrinsically linked to the assignment. It can be changed, but this is not the proper vehicle by which to “carry forward” an assignment to the next learning cycle. You should change the assignment date only to correct a mistake. Assignment Date and Due Date are WordPress post meta.
 
-**Keywords** - 
+### Keywords** - 
 Keywords are also tags, and used in the traditional WordPress way. They are considered in search on SchoolListit, and we hope also on other search engines.
 
 ## Security
-Our application is built with security in mind. Through ReactJS we are decoupled from our database. API calls are encrypted. The student information lives only on the local device of the user. That student name, grade, and school is only exposed to the REST API via one encrypted call. We do not have any student performance data co-mingled with engagement analytics.
+SchoolListIt was designed with security in mind. Through ReactJS we are decoupled from our database. API calls are encrypted. The student information lives only on the local device of the user. That student name, grade, and school is only exposed to the REST API via one encrypted call. We do not have any student performance data co-mingled with engagement analytics.
 
 ### Distributed Databases
 The safest scenario would be for each school system to host its own instance of the SchoolListIt REST API plugin. Every distributed SchoolListIt database can still be rendered into the SchoolListIt app and globally available. By stringing together many smaller WordPress Databases, the whole system will be more secure from an attack and more performant.
@@ -47,7 +47,7 @@ Install and Activate.
 
 ### Settings
 
-TODO: need to build a WP admin interface for API Keys, etc to handle the verification of sites with SchoolListIt and authentication. I have built the authentication, but no method by which these other websites can get an api key, etc.
+* TODO: need to build a WP admin interface for API Keys, etc to handle the verification of sites with SchoolListIt and authentication. I have built the authentication, but no method by which these other websites can get an api key, etc.
 
 ### That's it.
 You now have the 'assignments' post type and all the custom taxonomies needed to share assignments and due dates with SchoolListIt. 
