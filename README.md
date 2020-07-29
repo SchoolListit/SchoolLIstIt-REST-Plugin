@@ -30,7 +30,7 @@ In practice, this means that any school or class will no longer show in the clas
 ### Assignment Date / Due Date -
 Assignment date is not like a hashtag. It is intrinsically linked to the assignment. It can be changed, but this is not the proper vehicle by which to “carry forward” an assignment to the next learning cycle. You should change the assignment date only to correct a mistake. Assignment Date and Due Date are WordPress post meta.
 
-### Keywords** - 
+### Keywords - 
 Keywords are also tags, and used in the traditional WordPress way. They are considered in search on SchoolListit, and we hope also on other search engines.
 
 ## Security
