@@ -87,7 +87,8 @@ class Lesson_Plans {
     public function __construct ($request){
        // $this->set_due_dates();
         $this->set_sections();
-        $this->set_assignments($request->get_body_params());
+        $this->request = $request->get_params();
+        $this->set_assignments($request->get_params());
     }
 
     private function set_due_dates(){
